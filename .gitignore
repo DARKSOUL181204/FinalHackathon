@@ -22,9 +22,6 @@ out/
 ### Mac ###
 .DS_Store
 
-# Excluded services as requested
-resource-service/
-request-service/
 
 # Logs and local artifacts
 *.log
