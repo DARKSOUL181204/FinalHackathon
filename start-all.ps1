@@ -1,4 +1,4 @@
-$mvn = "C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.3\plugins\maven-plugin\lib\maven3\bin\mvn.cmd"
+$mvn = if (Get-Command mvn -ErrorAction SilentlyContinue) { "mvn" } else { "C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.3\plugins\maven-plugin\lib\maven3\bin\mvn.cmd" }
 
 Write-Host "Building all microservices..."
 & $mvn clean install -DskipTests
